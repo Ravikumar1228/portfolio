@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700&family=Poppins:wght@700&family=Inder&family=Lateef&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+   /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: rgb(255, 253, 253)000;
+      background-color: rgb(0, 0, 0);
+    }
+
+    /* Navbar Styling */
+    .site-header-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .site-header {
+      background: rgb(0, 0, 0); /* semi-transparent background */
+      padding: 15px 0;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #0004ff;
+    }
+
+    /* Hero Section Styling */
+    .hero-section {
+      background-image: url('images/your-background-image.jpg'); /* replace with your image */
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+    }
+
+    .hero-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .hero-text-content {
+      max-width: 600px;
+    }
+
+    .hero-text-content p.style_5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    h1.style_7 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .style_8 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .style_14 {
+      color: #0011ff;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icon-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.social-icon-link:hover {
+  transform: scale(1.15);
+  background-color: #ffd700; /* Highlight color on hover */
+}
+
+/* Make sure both images are positioned right */
+.social-icon-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.social-icon-wrapper img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.social-icon-wrapper img:last-child {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.social-icon-link:hover img:last-child {
+  transform: translate(-50%, -50%) scale(1.2) rotate(5deg);
+}
+
+
+    .cta-button {
+      background:black;
+      color: #ffffff;
+      padding: 12px 24px;
+      margin-left: 30%;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: blue;
+    }
+
+   .hero-image-container {
+  position: relative;
+  width: 300px; /* or whatever size you need */
+  height: 300px;
+  bottom: 50px;
+  margin-left: 5%;
+}
+
+.hero-person-image {
+  position: absolute;
+  margin-bottom: 10%;
+  left: 0%;
+  width: 100%; /* makes it fill the container */
+  height: 120%;
+  z-index: 2; /* appear above the shape */
+}
+
+.decorative-shape-1 {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  width: 250px; /* or custom size */
+  height: 300px;
+  background: radial-gradient(circle,#2f03f5, #0e1de6); /* example shape */
+  z-index: 1; /* appear below the image */
+  border-radius: 10%; /* optional, if you want it round */
+}
+
+    /* Example: Different background on hover */
+.social-icon-link:nth-child(1):hover {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+.social-icon-link:nth-child(2):hover {
+  background-color: #e1306c; /* Instagram Pink */
+}
+.social-icon-link:nth-child(3):hover {
+  background-color: #333; /* GitHub Black */
+}
+
+
+/* CSS for section section:education */
+.education-section {
+  padding: 80px 20px;
+  background-color: #0e0d0d;
+  
+}
+
+.education-section .section-title {
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgb(255, 250, 250);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-accent {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 60px;
+  height: 60px;
+}
+
+.card-icon-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: 1403ff;
+}
+
+.card-content p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.date-badge {
+  display: inline-block;
+  background-color: #1403ff;
+  color: #fff;
+  padding:6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right:50px;
+}
+
+
+
+/* CSS for section section:skills */
+.skills-section .section-title,
+.style_38 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: blue;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgb(6, 2, 252);
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+}
+
+.flip-card-back {
+  background-color: #0004ff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0%;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #0016ff;
+}
+
+.skill-description {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+
+/* CSS for section section:projects */
+.section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .carousel-container {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+      padding: 50px 40px;
+      scroll-snap-type: x mandatory;
+      perspective: 1000px;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .carousel-container::-webkit-scrollbar-thumb {
+      background: rgb(60, 87, 238);
+      border-radius: 10px;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      width: 350px;
+      height: 350px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease;
+      transform: rotateY(-25deg) scale(0.9);
+    }
+
+    .slide:hover {
+      transform: rotateY(0deg) scale(1.05);
+      z-index: 10;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-container {
+        gap: 20px;
+        padding: 30px 20px;
+      }
+
+      .slide {
+        width: 80vw;
+        height: auto;
+        transform: none;
+      }
+
+      .slide:hover {
+        transform: scale(1.03);
+      }
+    }
+
+/* ==== Contact Section Wrapper ==== */
+.contact-section {
+  background-color: #000;
+  padding: 80px 20px;
+  
+}
+
+.contact-section .section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: blue;
+  margin-bottom: 50px;
+}
+
+/* ==== Layout for Cards ==== */
+.contact-section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==== Contact Info + Form Card ==== */
+.contact-info-card,
+.contact-form-card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(228, 226, 226, 0.226);
+  flex: 1 1 320px;
+  max-width: 500px;
+}
+
+/* ==== Info Card Title ==== */
+.contact-info-card h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contact-info-card h3 span {
+  color: #0004ff;
+}
+
+/* ==== Contact Item ==== */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.contact-icon-combo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.contact-item-icon-bg,
+.contact-item-icon-fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contact-item-icon-fg {
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  top: 12px;
+  left: 12px;
+}
+
+/* ==== Contact Text ==== */
+.contact-details p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-details .style_65 {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.contact-details .style_5 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* ==== Social Icons ==== */
+.contact-social-icons {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.social-icon-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon-bg,
+.social-icon-fg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.social-icon-fg {
+  z-index: 1;
+}
+
+/* ==== Form Group ==== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #1900ff;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+}
+
+/* ==== Submit Button ==== */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #0400ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #008fcc;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==== Footer Section ==== */
+.site-footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+  color: #f5ecec;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d1cccc;
+  margin-bottom: 25px;
+}
+
+.copyright-text {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .contact-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .submit-button {
+    justify-content: center;
+  }
+}
+
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-header" class="site-header-section">
+    <header class="site-header">
+      <nav class="navigation">
+        <ul class="nav-links">
+          <li><a href="#section-hero">Home</a></li>
+          <li><a href="#section-education">Education</a></li>
+          <li><a href="#section-skills">Skills</a></li>
+          <li><a href="#section-projects">Projects</a></li>
+          <li><a href="#section-contact-footer">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+
+  <!-- Hero Section -->
+  <section id="section-hero" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text-content">
+        <p class="style_5">Hello It's Me</p>
+        <h1 class="style_7">Ravikumar</h1>
+        <p class="style_8">And I'm a <span class="style_14">UI & UX Designer</span></p>
+        <p class="style_5 description">
+          I'm a UI/UX and Graphic Designer focused on creating clean, user-friendly designs. As a fresher, I bring a fresh perspective and a strong passion for visual storytelling and intuitive interfaces.
+        </p>
+        <div class="social-icons">
+          <a href="#" class="social-icon-link">
+            <div class="social-icon-wrapper">
+              <img src="images/social_16010765.png" alt="">
+              <img src="images/a8a78bf711a21172fc3342d5d862601a3dd808e3.png" alt="" class="">
+            </div>
+          </a>
+          <a href="#" class="social-icon-link">
+            <div class="social-icon-wrapper">
+              <img src="images/instagram_1384031.png" alt="">
+              <img src="images/671660e6ac922049d2fce280a258f8ce202b2f7a.png" alt="" class="">
+            </div>
+          </a>
+          <a href="#" class="social-icon-link">
+            <div class="social-icon-wrapper">
+              <img src="images/github_1051377.png" alt="">
+              <img src="images/6d6b49e86c0badcdda5d2baee24ec14933a5b05d.png" alt="" class="">
+            </div>
+          </a>
+        </div>
+        <a href="#" class="cta-button">Download CV</a>
+      </div>
+      <div class="hero-image-container">
+        <img src="images/dc9013fbcdca14689f67016a470ea77a137030d5.png" alt="Ravikumar" class="hero-person-image">
+        <div class="decorative-shape-1"></div>
+      </div>
+    </div>
+  </section>
+
+<section id="section-education" class="education-section style_23">
+  <div class="main-container">
+    <h2 class="section-title style_24">Education</h2>
+    <div class="education-cards">
+      <div class="education-card style_27">
+        <div class="">
+          <img src="" alt="" class="">
+        </div>
+        <div class="card-content">
+          <!-- Content for Frame 4 (199:593) - Assuming structure from Frame 5 -->
+          <h3 class="style_29">B.Tech Information Technology</h3>
+          <p class="style_30">Indra Ganesan College Of Engineering Trichy.</p>
+          <p class="style_30">2020-2024</p>
+          <p class="style_29">7.36</p>
+        </div>
+      </div>
+      <div class="education-card style_27">
+        <div class="">
+           <img src="" alt="" class="">
+        </div>
+        <div class="card-content">
+          <h3 class="style_29">HSC & SSLC</h3>
+          <p class="style_30">St.Thomas Hr.Sec.School, Nazareth.</p>
+          <p class="style_30">2018-2020 (HSC) | 2017-2020 (SSLC)</p>
+          <p class="style_29">Scored 50% in HSC and 70% in SSLC</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-skills" class="skills-section style_37">
+  <div class="main-container">
+    <h2 class="section-title style_38">Skills</h2>
+    <div class="skills-grid">
+      
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/2009a32b6544a1fe23ba2162030d419fb9c83e58.png" alt="HTML Icon" class="skill-icon">
+            <p class="skill-name style_41">HTML</p>
+          </div>
+          <div class="flip-card-back">
+            <p class="skill-description">Markup language for structuring web content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/087ca5d518d6256de212f55f4ec55e87e9aae892.png" alt="CSS Icon" class="skill-icon">
+            <p class="skill-name style_41">CSS</p>
+          </div>
+          <div class="flip-card-back">
+            <p class="skill-description">Stylesheet language used for designing websites.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/e027dc58d948cff94651d2b9f55921905c148683.png" alt="JS Icon" class="skill-icon">
+            <p class="skill-name style_41">Bootstrap</p>
+          </div>
+          <div class="flip-card-back">
+            <p class="skill-description">Responsive front-end framework for faster web development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/0096bc58929ff29a08edafbc9727952160c98ccb.png" alt="Photoshop Icon" class="skill-icon">
+            <p class="skill-name style_41">Photoshop</p>
+          </div>
+          <div class="flip-card-back">
+            <p class="skill-description">Tool for photo editing and graphic design.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/8ca66094f4e26d2e381e1eb6c5de3596e4219d3c.png" alt="Illustrator Icon" class="skill-icon">
+            <p class="skill-name style_41">Illustrator</p>
+          </div>
+          <div class="flip-card-back">
+            <p class="skill-description">Vector graphics editor used for logos and illustrations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/1122e1d28f5958d28c598857ac91bcce14d4fb6a.png" alt="Figma Icon" class="skill-icon">
+            <p class="skill-name style_41">Figma</p>
+          </div>
+          <div class="flip-card-back">
+            <p class="skill-description">Collaborative UI/UX design and prototyping tool.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="section-projects" class="projects-section style_37">
+  <div class="main-container">
+    <h2 class="section-title style_47">
+      <span class="font-sen">My </span><span class="font-sen text-style-50-color">Projects</span>
+    </h2>
+    
+    <div class="carousel-container">
+  <div class="slide"><img src="images/1st.jpg" alt="Project 1"></div>
+  <div class="slide"><img src="images/2nd.jpg" alt="Project 2"></div>
+  <div class="slide"><img src="images/3rd.jpg" alt="Project 3"></div>
+  <div class="slide"><img src="images/4th.jpg" alt="Project 4"></div>
+  <div class="slide"><img src="images/5th.jpg" alt="Project 5"></div>
+  <div class="slide"><img src="images/6th.jpg" alt="Project 6"></div>
+  <div class="slide"><img src="images/7th.jpg" alt="Project 7"></div>
+  <div class="slide"><img src="images/8th.jpg" alt="Project 8"></div>
+</div>
+</section>
+<section id="section-contact-footer" class="contact-section style_37">
+  <div class="main-container">
+    <h2 class="section-title style_38">Contact</h2>
+    <div class="contact-section-content">
+      <div class="contact-info-card style_64"> <!-- Based on 199:688 -->
+        <h3 class="style_67-contact-info-title">
+          Contact <span class="text-style-69-contact-info-title-blue">Information</span>
+        </h3>
+        <div class="contact-item">
+          
+          <div class="contact-icon-combo">
+            <img src="images/199_701.svg" alt="Email icon background" class="contact-item-icon-bg">
+            <img src="images/9b9de070accf93a50abed6c4ced94c6049f422ba.png" alt="Email icon" class="contact-item-icon-fg email-icon">
+          </div>
+          <div class="contact-details">
+            <p class="style_65">Email</p>
+            <p class="style_5">ravikumarm2802<br>@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          
+          <div class="contact-icon-combo">
+            <img src="images/199_694.svg" alt="Phone icon background" class="contact-item-icon-bg">
+            <img src="images/bc420981a33e988e7fff051113ab09cf6aba4c66.png" alt="Phone icon" class="contact-item-icon-fg phone-icon">
+          </div>
+          <div class="contact-details">
+            <p class="style_65">Phone</p>
+            <p class="style_5">+91-9123508927</p>
+          </div>
+        </div>
+       
+        <div class="contact-social-icons">
+          <a href="#" class="social-icon-link">
+            <div class="social-icon-wrapper">
+                <img src="images/I199_704_186_134.svg" alt="" class="">
+                <img src="images/a8a78bf711a21172fc3342d5d862601a3dd808e3.png" alt="LinkedIn Icon" class="social-icon-fg">
+            </div>
+          </a>
+          <a href="#" class="social-icon-link">
+            <div class="social-icon-wrapper">
+                <img src="images/I199_706_186_136.svg" alt="" class="">
+                <img src="images/671660e6ac922049d2fce280a258f8ce202b2f7a.png" alt="Instagram Icon" class="social-icon-fg">
+            </div>
+          </a>
+          <a href="#" class="social-icon-link">
+            <div class="social-icon-wrapper">
+                
+                <img src="images/6d6b49e86c0badcdda5d2baee24ec14933a5b05d.png" alt="GitHub Icon" class="social-icon-fg">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-card style_63"> <!-- Based on 199:685 -->
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name*" class="style_71 style_72">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email*" class="style_71 style_72">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Message*" rows="5" class="style_71 style_72"></textarea>
+          </div>
+          <button type="submit" class="submit-button style_74 style_75">
+            <img src="images/1ca308f3f54d6b745173dbaf132cac0a7c783679.png" alt="" class="button-icon"> <!-- Send icon -->
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer-bottom">
+      <div class="footer-line style_61"></div> <!-- Decorative line 199:683 -->
+      <p class="copyright-text style_70">
+        <img src="images/199_707.svg" alt="Copyright icon" class="copyright-icon">
+        2025 Ravikumar.All rights reserved
+      </p>
+    </footer>
+  </div>
+</section>
+</body>
+</html>

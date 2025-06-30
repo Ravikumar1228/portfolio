@@ -1,0 +1,118 @@
+body {
+  font-family: 'Sen', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* style_1 from root node */
+  color: #ffffff; /* Default text color, sections will override */
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden; /* To contain child elements */
+}
+
+/* Common utility classes from textStyles if needed */
+.font-sen { font-family: 'Sen', sans-serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+.font-inder { font-family: 'Inder', sans-serif; }
+.font-lateef { font-family: 'Lateef', sans-serif; }
+
+.color-blue { color: #0016ff; }
+.color-white { color: #ffffff; }
+.color-black { color: #000000; }
+.color-text-placeholder { color: rgba(255, 255, 255, 0.2); }
+
+
+/* Styles from css_summary.json converted to classes */
+.style_2 { /* home section background */
+  background-image: url('images/09ef8dce04a334a9f9412dad24254a5ae9eb027e.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border: 1px solid #000000; */ /* Might be too strong, design dependent */
+  overflow: hidden;
+}
+.style_3 { background-color: #ffd5ac; border-radius: 79px; }
+.style_4 { /* Ravikumar image */
+  /* imageSrc: "dc9013fbcdca14689f67016a470ea77a137030d5" */
+  border-radius: 79px; /* Applied to the img directly or its wrapper */
+}
+.style_5 { color: #ffffff; font-family: 'Sen', sans-serif; font-weight: 400; font-size: 24px; line-height: 28.875px; text-align: left; }
+.style_7 { color: #0016ff; font-family: 'Sen', sans-serif; font-weight: 700; font-size: 64px; line-height: 77px; text-align: left; }
+.style_8 { color: #ffffff; font-family: 'Sen', sans-serif; font-weight: 400; font-size: 40px; line-height: 48.125px; text-align: left; }
+.style_10 { /* Nav background */
+  background-color: rgba(217, 217, 217, 0);
+  border: 1px solid rgba(174, 174, 181, 0);
+  border-radius: 123.5px;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+.style_12 { color: #ffffff; font-family: 'Inder', sans-serif; font-weight: 400; font-size: 20px; line-height: 25px; text-align: left; }
+.style_14 { color: #0016ff; font-family: 'Sen', sans-serif; font-weight: 600; font-size: 48px; line-height: 57.75px; text-align: left; }
+.style_15 { background-color: #0016ff; border: 1px solid #fff9f9; border-radius: 10px; }
+.style_16 { color: #ffffff; font-family: 'Sen', sans-serif; font-weight: 500; font-size: 25px; line-height: 30.078125px; text-align: left; }
+
+.style_23 { background-color: #252222; overflow: hidden; } /* education section */
+.style_24 { color: #0016ff; font-family: 'Sen', sans-serif; font-weight: 700; font-size: 48px; line-height: 57.75px; text-align: left; }
+.style_27 { background-color: rgba(217, 217, 217, 0.1); border: 1px solid #ffffff; border-radius: 20px; box-shadow: inset 0px 4px 100px 0px rgba(0, 0, 0, 0.25); }
+.style_28 { background-color: #0016ff; border-radius: 14px; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+.style_29 { font-family: 'Sen', sans-serif; font-weight: 700; font-size: 36px; line-height: 43.3125px; text-align: left; color: #ffffff; } /* Added color */
+.style_30 { font-family: 'Sen', sans-serif; font-weight: 700; font-size: 30px; line-height: 36.09375px; text-align: left; color: #ffffff; } /* Added color */
+.style_31 { border-radius: 127px; background-color: #0016ff; /* Assuming a fill for the timeline box */ }
+.style_32 { font-family: 'Sen', sans-serif; font-weight: 700; font-size: 24px; line-height: 28.875px; text-align: left; color: #ffffff; } /* Added color */
+.style_35 { background-color: #0016ff; border-radius: 15px; }
+
+.style_37 { background-color: #000000; overflow: hidden; } /* skills, projects, contact sections */
+.style_38 { color: #091df6; font-family: 'Sen', sans-serif; font-weight: 700; font-size: 48px; line-height: 57.75px; text-align: left; }
+.style_39 { border-radius: 15px; background-color: rgba(255,255,255,0.05); /* Placeholder, actual skill card bg not specified, using a subtle one */ }
+.style_41 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 32px; line-height: 48px; text-align: left; color: #ffffff; } /* Added color */
+
+.style_47 { color: #ffffff; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 48px; line-height: 72px; text-align: left; }
+.text-style-50-color { color: #0016ff; } /* For "Projects" in "My Projects" */
+
+.style_51 { filter: blur(15px); } /* Project image wrapper blur */
+.style_61 { background-color: #d9d9d9; } /* Used for some cutouts, likely not directly visible */
+.style_63 { background-color: rgba(217, 217, 217, 0.1); border: 1px solid #fbfcff; border-radius: 35px; } /* Contact form card */
+.style_64 { background-color: rgba(217, 217, 217, 0.1); border: 1px solid #fffafa; border-radius: 35px; } /* Contact info card */
+.style_65 { color: #ffffff; font-family: 'Sen', sans-serif; font-weight: 600; font-size: 36px; line-height: 43.3125px; text-align: left; }
+.style_67-contact-info-title { color: #ffffff; font-family: 'Sen', sans-serif; font-weight: 700; font-size: 36px; line-height: 43.3125px; text-align: left; }
+.text-style-69-contact-info-title-blue { color: #0016ff; } /* For "Information" in contact title */
+.style_70 { color: #000000; font-family: 'Lateef', sans-serif; font-weight: 400; font-size: 32px; line-height: 46.265625px; text-align: left; }
+.style_71 { background-color: rgba(217, 217, 217, 0.1); border: 1px solid #fffdfd; border-radius: 10px; }
+.style_72 { color: rgba(255, 255, 255, 0.2); font-family: 'Sen', sans-serif; font-weight: 400; font-size: 32px; line-height: 38.5px; text-align: left; }
+.style_74 { background-color: #091df6; border-radius: 15px; }
+.style_75 { color: #ffffff; font-family: 'Sen', sans-serif; font-weight: 400; font-size: 32px; line-height: 38.5px; text-align: left; }
+
+/* Responsive base */
+img { max-width: 100%; height: auto; display: block; }
+* { box-sizing: border-box; }
+
+@media (max-width: 768px) {
+  .hero-content, .contact-section-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text-content, .hero-image-container, .contact-info-card, .contact-form-card {
+    width: 100% !important; /* Override inline styles for responsiveness */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero-image-container { margin-top: 30px; }
+  .nav-links { flex-direction: column; gap: 10px; }
+  .skills-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .education-cards { flex-direction: column; }
+  .projects-scroll-container { height: 300px; /* Adjust for smaller screens */ }
+}
+
+@media (max-width: 480px) {
+  .style_7 { font-size: 48px; line-height: 1.2; } /* Ravikumar name */
+  .style_14 { font-size: 36px; line-height: 1.2; } /* Front-end dev */
+  .style_8 { font-size: 30px; line-height: 1.2; } /* And I'm a */
+  .style_5 { font-size: 18px; line-height: 1.4; } /* Paragraphs */
+  .style_24, .style_38, .style_47 { font-size: 36px; line-height: 1.2; } /* Section titles */
+  .skills-grid { grid-template-columns: 1fr; }
+}
